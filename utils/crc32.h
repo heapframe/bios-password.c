@@ -10,13 +10,6 @@ typedef struct {
     const uint32_t* table;
 } Crc32;
 
-static uint32_t crc32_ieee_table[256];
-static int crc32_table_computed = 0;
-
-static void make_crc32_table(uint32_t poly, uint32_t* table);
-
-static const uint32_t* get_crc32_table(uint32_t poly);
-
 void crc32_init(Crc32* c, uint32_t poly);
 
 void crc32_reset(Crc32* c);

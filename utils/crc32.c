@@ -2,6 +2,9 @@
 #include <stdint.h>
 #include "crc32.h"
 
+static uint32_t crc32_ieee_table[256];
+static int crc32_table_computed = 0;
+
 static void make_crc32_table(uint32_t poly, uint32_t* table) {
     for (int i = 0; i < 256; i++) {
         uint32_t crc = (uint32_t)i;

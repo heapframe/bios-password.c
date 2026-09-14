@@ -11,9 +11,6 @@
 #define MAX_PHOENIX_SOLVERS 8
 
 
-static PhoenixSolver* currentPhoenixSolver = NULL;
-static PhoenixInfo *currentPhoenixInfo = NULL;
-
 const char digitsOnly[] = "123456789";
 const char lettersOnly[] = "abcdefghijklmnopqrstuvwxyz";
 
