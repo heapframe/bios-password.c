@@ -120,9 +120,9 @@ int main(int argc, char *argv[]) {
     #endif
 
     #ifdef ENABLE_INSYDE
-        solvers[count++] = makeSolver("acerInsydeKeygen", "Some Acer, HP  laptops. 8 digits", "0173549286", "^[0-9]{10}$", acerInsydeKeygen);
-        solvers[count++] = makeSolver("insydeKeygen", "Insyde H20 (generic)", "03133610", "^[0-9]{8}$", insydeKeygen);
-        solvers[count++] = makeSolver("hpInsydeKeygen", "HP Insyde H2O", "i 70412809", "[i \\d{8}]", hpInsydeKeygen);
+        solvers[count++] = makeSolver("acerInsyde", "Some Acer, HP  laptops. 8 digits", "0173549286", "^[0-9]{10}$", acerInsydeKeygen);
+        solvers[count++] = makeSolver("insyde", "Insyde H20 (generic)", "03133610", "^[0-9]{8}$", insydeKeygen);
+        solvers[count++] = makeSolver("hpInsyde", "HP Insyde H2O", "i 70412809", "[i \\d{8}]", hpInsydeKeygen);
     #endif
 
     #ifdef ENABLE_ASUS
