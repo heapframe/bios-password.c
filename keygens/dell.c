@@ -680,9 +680,11 @@ char *dellKeygen(const char *serial)
 	unsigned char len, len1, bfunc, echo = 0;
 	char s2[20];
 	char *minus;
-	signed char btype;
+	signed char btype = -1;
 
 	strncpy(buf1input, serial, sizeof(buf1input));
+	buf1input[19] = '\0'; // handle string truncation
+
 	len = strlen(buf1input);
 	if (len && (buf1input[len - 1] == '\n'))
 	{
