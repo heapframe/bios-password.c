@@ -1,3 +1,5 @@
+#adapted from https://www.throwtheswitch.org/build/make
+
 ifeq ($(OS),Windows_NT)
   ifeq ($(shell uname -s),) # not in a bash-like shell
 	CLEANUP = del /F /Q
