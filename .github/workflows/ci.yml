@@ -1,4 +1,4 @@
-name: Tests
+name: Build & Test
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
         run: |
           sudo apt-get update -q
           sudo apt-get install -y --no-install-recommends \
-            gcc make build-essential
+            build-essential
 
       - name: Test
         run: make test
