@@ -143,10 +143,10 @@ int main(int argc, char *argv[]) {
     if (argc != 2) {
         fprintf(stderr, "Usage: %s SERIAL\n", argv[0]);
         printf("\nAvailable keygens:\n");
-        printf("%-18s | %-42s | %-21s| %-12s\n", "Solver Name", "Description", "Example", "Regex");
-        printf("-------------------+--------------------------------------------+----------------------+---------------\n");
+        printf("%-18s | %-42s | %-21s\n", "Solver Name", "Description", "Example");
+        printf("-------------------+--------------------------------------------+----------------------\n");
         for (int i = 0; solvers[i].name; ++i) {
-            printf("%-18s | %-42s | %-21s| %-12s\n", solvers[i].name, solvers[i].description, solvers[i].example, solvers[i].pattern);
+            printf("%-18s | %-42s | %-21s\n", solvers[i].name, solvers[i].description, solvers[i].example);
         }
         return 1;
     }
