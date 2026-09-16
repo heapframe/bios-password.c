@@ -11,6 +11,7 @@
 #include "keygens/insyde.h"   // for acerInsydeKeygen, hpInsydeKeygen, insyd...
 #include "keygens/phoenix.h"  // for makePhoenixSolver, digitsOnly, PhoenixBios
 #include "keygens/sony.h"     // for sonyKeygen
+#include "keygens/sony4x4.h"  // for sony4x4Keygen
 
 #include "utils/solver.h"     // for makeSolver, Solver, runSolver
 
@@ -131,7 +132,10 @@ int main(int argc, char *argv[]) {
     #ifdef ENABLE_DELL
         solvers[count++] = makeSolver("dellHdd", "old dell hdd serial keygen (11 char)", "*****789XYZ", "^[ *]{0,10}[A-Z0-9]{1,11}$", dellKeygen);
         solvers[count++] = makeSolver("dellServiceTag", "old dell service tag keygen (7 char)", "ABC12**", "^[A-Z0-9]{1,7}\\*{0,6}$", dellKeygen);
+    #endif
 
+    #ifdef ENABLE_SONY4x4
+        solvers[count++] = makeSolver("sony4x4", "Sony 4x4, remove dashes", "73KR-3FP9-PVKH-K29R", "^[9DPK7V2F3RT6HX8J]{16}$", sony4x4Keygen);
     #endif
 
     solvers[count++] = (Solver){ NULL, NULL, NULL, NULL };

@@ -1,6 +1,6 @@
 A C port of the code at bios-pw.org, im planning to get this to run on microcontrollers at some point like on the flipper zero
 
-compile with `make`, compiled binary goes in `build/keygen`
+compile with `make keygen`, compiled binary goes in `build/keygen`
 
 
 ```

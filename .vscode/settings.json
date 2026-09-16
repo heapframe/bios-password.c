@@ -1,0 +1,5 @@
+{
+    "cmake.sourceDirectory": "/home/axjp/Documents/Projects/bios pw/C/unity",
+    "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
+    "C_Cpp.default.compilerPath": "/usr/sbin/gcc"
+}
